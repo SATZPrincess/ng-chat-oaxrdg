@@ -1,0 +1,8 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+
+<button (click)="openUserChat()">newchat</button>
+
+<ng-chat #ngChatInstance [adapter]="adapter" [userId]="userId" [isViewportOnMobileEnabled]= "true" viewportWidthCalculationEnabled="true" [hideFriendsList]="true"></ng-chat>
